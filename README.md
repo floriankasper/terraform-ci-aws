@@ -1,4 +1,4 @@
-# tf-ci-module
+# Terraform CI/CD Module for AWS
 This Terraform module is intended to create an AWS CodeCommit repository integrated with AWS CodePipeline and CodeBuild[^1]. The CodePipeline consists of two stages: 
 
 1. A Source stage that pulls from the CodeCommit repository
