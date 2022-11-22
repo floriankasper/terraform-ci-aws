@@ -36,8 +36,7 @@ module "ci-module" {
     git push --set-upstream origin master
     ```
 
-2. To use ssh, you need to have an ssh key for code commit within your user's security credentials, if you prefer https have a look [here] (https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html). 
-   If you like to create a dedicated user for Codecommit, you could use this snippet within your `main.tf` file.
+2. To use ssh, you need to have an ssh key for code commit within your user's security credentials; if you prefer https, look [here](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html). For example, if you like to create a dedicated user for Codecommit, you could use this snippet within your main.tf file.
     ```hcl
     resource "aws_iam_user" "git_user" {
       name      = "codecommit_user"
